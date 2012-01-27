@@ -1,0 +1,19 @@
+{
+   "browser_action": {
+      "default_icon": "images/128.png",
+      "default_title": "Razuna Widget",
+      "popup": "razuna.html"
+   },
+   "options_page": "options.html",
+   "description": "Access your files in Razuna with this Widget",
+   "icons": {
+      "128": "images/128.png",
+      "16": "images/128.png",
+      "32": "images/128.png",
+      "48": "images/128.png"
+   },
+   "name": "Razuna",
+   "permissions": [ "http://*.razuna.com/", "https://*.razuna.com/", "tabs" ],
+   "update_url": "http://clients2.google.com/service/update2/crx",
+   "version": "0.2"
+}
