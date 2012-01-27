@@ -8,3 +8,7 @@ Installation
 
 Developers know how to activate the Razuna Chrome Plugin :-)
 
+Support
+-------
+
+Community support is available on the [Razuna GetSatisfaction page](http://getsatisfaction.com/razuna).
