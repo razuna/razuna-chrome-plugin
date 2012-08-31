@@ -1,24 +1,40 @@
+<!DOCTYPE html>
 <html>
     <head>	
-		<script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
 		<script type="text/javascript" src="js/razuna.js"></script>
+        <style>
+            html, body {
+                height: 100%;
+                width: 100%;
+            }
+            body {
+                background-color: #FFFFFF;
+                font-size:12px;
+                font-family: 'Helvetica Neue',Helvetica,Arial,"Nimbus Sans L",sans-serif;
+                margin: 0;
+            }
+            a {
+                color: #000000;
+                text-decoration: underline;
+            }
+            a:visited {
+                color: #000000;
+                text-decoration: underline;
+            }
+            a:hover {
+                color: green;
+                text-decoration: underline;
+            }
+        </style>
     </head>
-    <body leftmargin="0px" topmargin="0px" style="height:560px;width:480px;overflow:hidden" bottommargin="0px" rightmargin="0px" marginwidth="0px" marginheight="0px" onload="loadrazuna();">
+    <body leftmargin="0px" topmargin="0px" style="height:560px;width:480px;overflow:hidden" bottommargin="0px" rightmargin="0px" marginwidth="0px" marginheight="0px">
         <div>
-			<iframe id="mainrazuna" src="./loading.html" style="height:490px;width:470px" frameborder="0"></iframe>
+			<iframe id="mainrazuna" style="height:540px;width:475px" frameborder="0"></iframe>
         </div>
-        <div style="padding-right:10px;">
-            <a target="_blank" style="text-decoration:none" id="razunaStandard">
-                <img src="images/arrow_left.gif" style="margin: -2px 0 -2px 0;"/>
-                <span style="line-height:20px;font-family: arial, serif;font-weight:bold;font-size:16px;color:#000000;">Go to Razuna</span>
-            </a>
+        <div style="padding-left:10px;">
+            <a target="_blank" style="text-decoration:none" id="razunaStandard">Razuna Web Version</a>
         </div>
     </div>
-	<script>
-	// The host storage
-	var razunaHost = localStorage["razHost"];
-	// Set href of Razuna Standard
-	$("#razunaStandard").attr("href", razunaHost );
-	</script>
 </body>
 </html>

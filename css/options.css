@@ -6,8 +6,12 @@ body.options h2{display:block;text-align:center;margin:4px 0;font-size:16pt;font
 #submitMessage.success{background:yellow;color:black;}
 #submitMessage.error{background:red;color:white;}
 #optionsHeader{text-align:center;}
-input[type=submit],button{color:black;}
-input[disabled],button[disabled]{color:#696969;}
+input[type=submit], button {
+	color:black;
+}
+input[disabled], button[disabled] {
+	color:#696969;
+}
 #optionsView{width:600px;}
 .vignette{margin:40px auto 20px auto;padding:0;border-width:12px 20px 20px 12px;}
 .vignetteContent{background:white;padding:18px;-border-radius:6px;}

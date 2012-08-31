@@ -2,39 +2,37 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="css/options.css" />
-    <script type="text/javascript" src="js/jquery-1.5.2.min.js"></script>    
+    <script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>    
     <script type="text/javascript" src="js/options.js"></script>
   </head>
-  <body class="options" onload="loadOptions()">
+  <body class="options">
     <div id="optionsView" class="vignette">
     <div class="vignetteContent">
       <div id="optionsHeader">
         <img src="images/razuna_logo-200.png"/>
       </div>
-      <form name="optionsForm" class="optionsForm" action="#">
+      
         <div id="optionsContainer">
-        <h2 message="options_title">Razuna Options</h2>
+          <h2 message="options_title">Razuna Options</h2>
         
-        <table class="simpleOptions">
-        <div id="developerContainer">
-        <table class="simpleOptions">
-        <tr>
-        	<td><strong>Enter domain to your Razuna installation.</strong><br/>For the <strong>HOSTED</strong> accounts this would be http://myname.razuna.com for <strong>SELF-HOSTED</strong> account this would be the URL to your Razuna Host; http://myrazuna.local:8080/razuna/raz1/dam.<br/>Note: This extension only works with one host at a time.</td>
-        </tr>
-        <tr>
-        	<td><input type="text" name="razunahost" id="razunahost" style="width:300px;" value="" /></td>
-        </tr>
-        </table>
-        </div>
+          <div id="developerContainer">
+            <table class="simpleOptions">
+              <tr>
+              	<td><strong>Enter domain to your Razuna installation.</strong><br/>For the <strong>HOSTED</strong> accounts this would be http://myname.razuna.com for <strong>SELF-HOSTED</strong> account this would be the URL to your Razuna Host; http://myrazuna.local:8080/razuna/raz1/dam.<br/>Note: This extension only works with one host at a time.</td>
+              </tr>
+              <tr>
+              	<td><input type="text" name="razunahost" id="razunahost" style="width:300px;" value="" placeholder="Enter a valid Razuna host name" /></td>
+              </tr>
+            </table>
+          </div>
        
-        <input type="submit" value="Save Options" onclick="saveOptions();return false;"/>
-        &nbsp;
-        <input type="button" class="button" value="reset" onclick="eraseOptions();return false;"/>&nbsp;
-    
-        <span id="status" style="float:right;color:green;font-weight:bold;"></span>
-        
-      </form>
-    </div>
+          <input type="submit" id="buttonSave" value="Save Options" />
+          &nbsp;
+          <input type="button" id="buttonReset" class="button" value="reset" />&nbsp;
+          <br /><br />
+          <span id="status"></span>
+        </div>    
+      
     </div>
     <div class="copyright" message="copyright"></div>
   </body>
