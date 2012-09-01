@@ -9,10 +9,8 @@ function loadRazuna(){
 	// If the razunahost is not defined or not valid then
 	if (razunaHost == undefined) {
 		chrome.tabs.create({url: "options.html", selected: true});
-		window.close();
 	}
 	else{
-		// Get cookie
 		$("#mainrazuna").attr("src", razunaHost + "/index.cfm?fa=c.mini_browser&start=true");
 		$("#razunaStandard").attr("href", razunaHost );
 	}
