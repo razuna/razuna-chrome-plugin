@@ -5,7 +5,7 @@
       "default_popup": "razuna.html"
    },
    "options_page": "options.html",
-   "description": "Access your files in Razuna with handy Chrome extension.",
+   "description": "Browse your Razuna Media Library and upload new files within Chrome easily.",
    "icons": {
       "128": "images/128.png",
       "16": "images/128.png",
@@ -15,6 +15,6 @@
    "name": "Razuna",
    "permissions": [ "http://*.razuna.com/", "https://*.razuna.com/", "tabs", "contextMenus", "notifications", "cookies", "contentSettings", "history", "proxy" ],
    "update_url": "http://clients2.google.com/service/update2/crx",
-   "version": "1.0",
+   "version": "1.0.1",
    "manifest_version": 2
 }
